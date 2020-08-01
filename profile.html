@@ -35,22 +35,32 @@
             </div>
         </div>
     </nav>
-    <!------Navbar------>
-    <div class="login-box">
-        <h1>Login</h1>
-        <div class="textbox">
-            <input type="text" placeholder="Username" name="" value="">
+    <!------Navbar end------>
+
+
+    <div class="login-container container-fluid">
+        <div class="login-box">
+            <h1>Login</h1>
+            <div class="textbox">
+                <input type="text" placeholder="Username" name="" value="" id="username">
+            </div>
+            <div class="textbox">
+                <input type="password" placeholder="Password" name="" value="" id="password">
+            </div>
+            <input class="sign-btn" type="button" name="" value="Sign in">
         </div>
-        <div class="textbox">
-            <input type="password" placeholder="Password" name="" value="">
+
+        <div class="profile">
+            <h1>Profile Info:</h1>
+            <p><strong>Username:</strong> <span id="user-email"></span></p>
+            <p><strong>Password:</strong> <span id="user-email"></span></p>
         </div>
-        <input class="sign-btn" type="button" name="" value="Sign in">
+
     </div>
 
+
     <!--Jquery links-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>

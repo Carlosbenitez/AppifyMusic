@@ -9,7 +9,6 @@
     font-size: xx-large;
 }
 
-#top100 {
-    margin: auto;
-    
+.display-container {
+    margin: 0 auto;
 }
