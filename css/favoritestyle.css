@@ -1,0 +1,9 @@
+#profile{
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
