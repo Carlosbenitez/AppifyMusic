@@ -8,3 +8,17 @@
     font-weight: bold;
     font-size: xx-large;
 }
+
+.login-container {
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 10px;
+}
+
+.login-box{
+    padding: 10px;
+}
+
+.profile {
+    margin-top: 20px;
+}
