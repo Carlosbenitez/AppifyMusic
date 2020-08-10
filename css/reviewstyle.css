@@ -19,22 +19,31 @@ h2{
     color: #007BFF;
 }
 
+h5{
+    color: #007BFF;
+    background: rgba(255, 255, 255, .75);
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+p{
+    color: #007BFF;
+    background: rgba(255, 255, 255, .75);
+}
+
 .carouselcontainer{
     margin: 0 auto;
     width: 80%;
-    max-width: 700px;
-    max-height: 700px;
+    max-width: 650px;
+    max-height: 650px;
 }
 
 #firsth2{
     margin-top: 10px;
 }
 
-footer{
-    position: relative;
-    margin-top: -180px;
-    height: 180px;
-    clear: both;
-    background-color: grey;
-    text-align: center;
+.fullreview{
+    font-weight: bold;
+    text-decoration: underline;
 }
