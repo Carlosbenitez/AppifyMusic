@@ -35,17 +35,30 @@
             </div>
         </div>
     </nav>
-    <!------Navbar------>
-    <div class="login-box">
-        <h1>Login</h1>
-        <div class="textbox">
-            <input type="text" placeholder="Username" name="" value="">
+    <!------Navbar End------>
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Login</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div> 
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remeber Password</span>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
         </div>
-        <div class="textbox">
-            <input type="password" placeholder="Password" name="" value="">
-        </div>
-        <input class="sign-btn" type="button" name="" value="Sign in">
-    </div>
+</div>
 
     <!--Jquery links-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -57,7 +70,23 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
 
+    function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "50px";
+    }
+    function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    
+    }
+</script>
     <!--our js-->
     <script src="js/profile.js"></script>
 

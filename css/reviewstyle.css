@@ -8,3 +8,42 @@
     font-weight: bold;
     font-size: xx-large;
 }
+
+h2{
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    border: dotted 3px #007BFF;
+    padding-bottom: 2px;
+    color: #007BFF;
+}
+
+h5{
+    color: #007BFF;
+    background: rgba(255, 255, 255, .75);
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+p{
+    color: #007BFF;
+    background: rgba(255, 255, 255, .75);
+}
+
+.carouselcontainer{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 650px;
+    max-height: 650px;
+}
+
+#firsth2{
+    margin-top: 10px;
+}
+
+.fullreview{
+    font-weight: bold;
+    text-decoration: underline;
+}
