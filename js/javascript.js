@@ -15,7 +15,8 @@ $(document).ready(function() {
         .then( json => {
             console.log(json);
 
-            
+            $(".artist-display").empty();
+          
             for(var i = 0; i <= 25; i++) {
 
                 //gets song name form api
@@ -36,11 +37,10 @@ $(document).ready(function() {
                 songDiv.append(track);
 
                 //preview button
-                var previewButton = $( '<button />' , { 'class': 'play-btn btn btn-default', type: 'button', id: 'test1',
-                html: '<span class="glyphicon glyphicon-arrow-left"></span>' })
+                var previewButton = $('<button class="play-btn"><i class="fas fa-play"></i>');
 
-                var pauseButton = $( '<button />' , { 'class': 'pause-btn btn btn-default', type: 'button', id: 'test1',
-                html: '<span class="glyphicon glyphicon-arrow-left"></span>' })
+
+                var pauseButton = $( '<button class="pause-btn"><i class="fas fa-pause"></i>');
 
 
                 $(previewButton).on("click", function() {
