@@ -22,7 +22,7 @@
     height: 480px;
     position: relative;
     margin: 6% auto;
-    background: rgb(44, 75, 255);
+    background: #007BFF;
     padding: 5px;
     overflow: hidden;
 }
@@ -31,7 +31,7 @@
     width: 100%;
     margin: 25px auto;
     position: relative;
-    box-shadow: 0 0 20px 9px #7e26031f
+    box-shadow: 0 0 20px 9px #7e26031f;
 }
 
 .toggle-btn{
@@ -102,4 +102,20 @@
 
 #register{
     left: 450px;
+}
+
+::placeholder {
+    color: white;
+}
+
+button{
+    font-weight: bold;
+}
+
+#loginbtn{
+    border: 1px solid black;
+}
+
+#registerbtn{
+    border: 1px solid black;
 }

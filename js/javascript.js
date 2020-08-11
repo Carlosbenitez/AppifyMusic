@@ -22,7 +22,6 @@ $(document).ready(function() {
             console.log(singerName);
             $("#artist-name").html(singerName);
 
-          
             for(var i = 0; i <= 25; i++) {
 
                 //gets song name form api
