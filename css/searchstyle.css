@@ -8,3 +8,23 @@
     font-weight: bold;
     font-size: xx-large;
 }
+
+.artistdisplay-search {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 100px;
+}
+
+.topsongdisplay-search {
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 200px;
+}
+
+.albumdisplay-search {
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 200px;
+}
