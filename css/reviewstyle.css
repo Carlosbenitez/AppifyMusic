@@ -51,3 +51,7 @@ p{
 body{
     background-color: rgb(165, 150, 238);
 }
+
+img{
+    border: 2px solid #007BFF;
+}
