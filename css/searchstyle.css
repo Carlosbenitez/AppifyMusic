@@ -17,6 +17,7 @@ i {
 .navbar-brand{
     font-weight: bold;
     font-size: xx-large;
+
 }
 
 #artist-name{
@@ -25,16 +26,19 @@ i {
 }
 
 .artist-display {
-    margin: 0 auto;
+    margin: 0 auto 10%;
     width: 80%;
+    height: 10%;
     box-shadow: 0 0 5px 2px;
     background-color: #007BFF;;
     color: white;
 }
 
 .songs {
-    padding: 20px;
+    padding: 100px;
     border-top: solid 1px white;
+    font-size: xx-large;
+    font-family: sans-serif;
 }
 
 .track-name {

@@ -55,6 +55,7 @@ $(document).ready(function() {
 
                 //display all content in here
                 $(".artist-display").prepend(songDiv);
+                $(".artist-display").
             }
 
         })
