@@ -83,6 +83,11 @@
     border: 0;
     outline: none;
     border-radius:30px;
+    border: 1px solid black;
+}
+
+.submit-btn:hover{
+    background-color: #007BFF;
 }
 
 .check-box{
@@ -114,8 +119,18 @@ button{
 
 #loginbtn{
     border: 1px solid black;
+    background-color: white;
+}
+
+#loginbtn:hover{
+    background: #007BFF;
 }
 
 #registerbtn{
     border: 1px solid black;
+    background-color: white;
+}
+
+#registerbtn:hover{
+    background: #007BFF;
 }
