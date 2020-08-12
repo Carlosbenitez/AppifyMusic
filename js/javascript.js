@@ -37,6 +37,8 @@ $(document).ready(function() {
                 var img = $("<img>").addClass('song-img').attr("src", songImg);
                 songDiv.append(img);
 
+                
+
                 //track name
                 var track = $("<p>").addClass("track-name").text(songName);
                 songDiv.append(track);
@@ -55,7 +57,7 @@ $(document).ready(function() {
 
                 //display all content in here
                 $(".artist-display").prepend(songDiv);
-                $(".artist-display").
+                
             }
 
         })
