@@ -7,22 +7,31 @@ $(document).ready(function() {
     .then(json => {
         console.log(json);
 
+        //array that holds the top tracks taken from last fm API
+        var trackNames = [];
         for(var i = 0; i < 10; i++) {
-            //gets img of tracks from last fm API
-            var trackImg = json.tracks.track[i].image[1];
 
-            //creates div to store track pictures
-            var topTrackDiv = $("<div class='carousel-item active'>");
-
-            var img = $("<img>").addClass("song-img").attr("src", trackImg);
-            topTrackDiv.append(img);
-
-
-            //prepend to top-tracks
-            $(".top-tracks").prepend(topTrackDiv);
+            //gets name of tracks from last fm API
+            var songName = json.tracks.track[i].name;
+            trackNames.push(songName);
         }
+        console.log(trackNames);
 
+        //This takes each name of songs from trackNames[]
+        //and gets the song info from Itunes API
+        //then displays each song into their own array with a length of 1
+        for(var i = 0; i < trackNames.length; i++) {
+            let iTunesURL = "https://itunes.apple.com/search?term=" + trackNames[i] + "&limit=1";
+
+            fetch(iTunesURL)
+            .then(data => data.json())
+            .then(json2 => {
+                console.log(json2);
+            });
+        }
     })
     .catch(error => console.log(error) )
+
+
 
 });
