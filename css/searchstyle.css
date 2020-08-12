@@ -9,7 +9,7 @@ i {
 }
 
 #profile{
-    float: right;
+    margin-right: 10px;
     position: absolute;
     right: 0;
 }
@@ -32,6 +32,7 @@ i {
     box-shadow: 0 0 5px 2px;
     background-color: #007BFF;;
     color: white;
+    height: 30%;
 }
 
 .songs {

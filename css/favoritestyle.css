@@ -1,5 +1,5 @@
 #profile{
-    float: right;
+    margin-right: 10px;
     position: absolute;
     right: 0;
 }
@@ -11,4 +11,8 @@
 
 body{
     background-color: rgb(165, 150, 238);
+}
+
+h1{
+    color: #007BFF;
 }
