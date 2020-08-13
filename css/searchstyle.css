@@ -21,6 +21,7 @@ i {
 #artist-name{
     text-align: center;
     color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .artist-display {
