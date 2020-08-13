@@ -61,9 +61,8 @@ $(document).ready(function() {
                 songDiv.append(track);
 
                 //preview button
-                var previewButton = $('<button class="play-btn" target="_blank"><i class="fas fa-play"></i>');
+                var previewButton = $('<button class="play-btn"><i class="fas fa-play"></i>');
                 previewButton.attr("data-song", songLink);
-
 
                 songDiv.append(previewButton);
 

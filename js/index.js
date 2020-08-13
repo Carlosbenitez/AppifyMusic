@@ -5,35 +5,45 @@ $(document).ready(function () {
     fetch(queryURL)
         .then(data => data.json())
         .then(json => {
-            console.log(json);
+            // console.log(json);
+
+            //hold songs
+            var songNames= [];
+            for(var i =0; i < 12; i++) {
+                var trackName = json.tracks.track[i].name;
+                songNames.push(trackName);
+            }
+            console.log(songNames);
 
 
+            for (var i = 0; i < 5; i++) {  
+                // console.log(songName);
 
-
-
-            for (var i = 0; i < 10; i++) {
-
-                console.log(json.tracks.track[i].name)
-
-                let ituneUrl = "https://itunes.apple.com/search?term=" + json.tracks.track[i].name + "&limit=10";
-                var topTrackDiv = $("<div class=top-tracks>");
+                let ituneUrl = "https://itunes.apple.com/search?term=" + songNames[i] + "&limit=1";
                 fetch(ituneUrl)
                     .then(data => data.json())
                     .then(json2 => {
                         console.log(json2);
+
+                        var topTrackDiv = $("<div class = 'track-display col-sm-12'>");
+
                         //gets img of tracks from last fm API
                         var trackImg =  json2.results[0].artworkUrl100;
 
                         //creates div to store track pictures
-                        
+                        var img = $("<img>").addClass("track-img").attr("src", trackImg);
+                        // console.log(img)
+                        topTrackDiv.append(img);
 
-                        var img = $("<img>").attr("src", trackImg);
-                        console.log(img)
-                        topTrackDiv.append(img,);
-
+                        ///==================================
+                        var names = json2.results[0].trackName;
+                        var nameDisplay = $("<p>").addClass("track-name").text(names);
+                        topTrackDiv.append(nameDisplay);
+                        //===================================
 
                         //prepend to top-tracks
                         $(".top-tracks").prepend(topTrackDiv);
+
                     })
 
             }
