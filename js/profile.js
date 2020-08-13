@@ -16,6 +16,4 @@ $(".sign-btn").on('click', function() {
 
 
 
-
-
-
+//shouldn't store username/password (is a vunlerability)
