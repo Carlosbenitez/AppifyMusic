@@ -39,7 +39,6 @@
         </div>
     </nav>
     <!------Navbar End------>
-
     <div class="hero">
         <div class="form-box">
             <div class="button-box">
@@ -48,20 +47,18 @@
             <button id="registerbtn" type="button" class="toggle-btn" onclick="register()">Register</button>
         </div> 
         <form id="login" class="input-group">
-            <input type="text" class="input-field" placeholder="User Id" required>
-            <input type="text" class="input-field" placeholder="Enter Password" required>
-            <input type="checkbox" class="check-box"><span>Remeber Password</span>
-            <button type="submit" class="submit-btn">Login</button>
+            <input type="text" class="input-field" placeholder="User Id" required id="user-id">
+            <input type="text" class="input-field" placeholder="Enter Password" required id="user-pass">
+            <button type="submit" class="submit-btn" id="login-btn">Login</button>
         </form>
         <form id="register" class="input-group">
-            <input type="text" class="input-field" placeholder="User Id" required>
-            <input type="email" class="input-field" placeholder="Email Id" required>
-            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="text" class="input-field" placeholder="User Id" required id="userInput-id">
+            <input type="email" class="input-field" placeholder="Email Id" required id="userInput-email">
+            <input type="text" class="input-field" placeholder="Enter Password" required id="userInput-password">
             <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
-            <button type="submit" class="submit-btn">Register</button>
+            <button type="submit" class="submit-btn" id="register-btn">Register</button>
         </form>
-        </div>
-</div>
+    </div>
 
     <!--Jquery links-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

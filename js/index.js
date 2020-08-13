@@ -15,7 +15,7 @@ $(document).ready(function() {
             var songName = json.tracks.track[i].name;
             trackNames.push(songName);
         }
-        console.log(trackNames);
+        console.log("top tracks:" + trackNames);
 
         //This takes each name of songs from trackNames[]
         //and gets the song info from Itunes API

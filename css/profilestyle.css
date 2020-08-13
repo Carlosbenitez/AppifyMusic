@@ -12,7 +12,6 @@
 .hero{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(31, 7, 248, 0.4),rgba(31, 7, 248, 0.4)), url(space.appify.jpg);
     background-position: center;
     position: absolute;
 }
@@ -25,6 +24,7 @@
     background: #007BFF;
     padding: 5px;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .button-box{
