@@ -1,3 +1,7 @@
+.navbar {
+    box-shadow: 0 2px 5px 2px;
+
+}
 #profile{
     margin-right: 10px;
     position: absolute;
@@ -52,3 +56,4 @@ p{
 img{
     border: 2px solid #007BFF;
 }
+

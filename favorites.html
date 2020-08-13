@@ -32,7 +32,7 @@
                 <div class="md-form mt-0">
                     <input class="form-control" type="text" placeholder="Song, album, artist..." aria-label="Search" id="user-input">
                 </div>
-                <button type="submit" class="btn btn-light" id="search-btn" onclick="window.location.href='search.html';">Search</button>
+                <button type="submit" class="btn btn-light" id="search-btn" onclick="window.location.href='search.html';"><i class = "fas fa-search"></i></button>
                 <a class="nav-item nav-link active" id="profile" href="profile.html">Profile</a>
             </div>
         </div>
@@ -41,6 +41,25 @@
     <!------Navbar End------>
 
     <h1>Your liked songs</h1>
+
+    <!--footer-->
+    <div class="sticky-bottom">
+        <footer>
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+                        <h3>Download Itunes to get full Experience!</h3>
+                        <ul>
+                            <li>
+                                <a class= "card-link" href="https://www.apple.com/itunes/?cid=OAS-US-DOMAINS-itunes.com"><i class="fab fa-apple"></i>Itunes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-bottom-text">&copy;Thank You Apple for a sick API</p>
+        </footer>
+        </div>
 
     <!--Jquery links-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -53,7 +72,10 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
-        <script src="js/javascript.js"></script>
+    <script src="https://kit.fontawesome.com/8cc12ec6d2.js" crossorigin="anonymous"></script>
+
+    <script src="js/javascript.js"></script>
+    <script src="js/profile.js"></script>
 </body>
 
 </html>

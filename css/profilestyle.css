@@ -1,3 +1,7 @@
+.navbar {
+    box-shadow: 0 2px 5px 2px;
+
+}
 #profile{
     margin-right: 10px;
     position: absolute;
@@ -12,7 +16,6 @@
 .hero{
     height: 100%;
     width: 100%;
-    background-image:  url(space.appify.jpg);
     background-position: center;
     position: absolute;
 }
@@ -25,6 +28,8 @@
     background: #007BFF;
     padding: 5px;
     overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0px 5px 3px;
 }
 
 .button-box{
@@ -133,4 +138,54 @@ button{
 
 #registerbtn:hover{
     background: #007BFF;
+}
+
+.wrong {
+    box-shadow: 0 0 3px 2px;
+    color: red;
+}
+
+h3 {
+    color: #fff;
+}
+
+.footer-top {
+    background-color: #111;
+    padding:  80px 0;
+}
+
+.segment-one h3{
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.segment-one h3::before {
+    content: '|';
+    color: #c65039;
+    padding-right: 10px;
+}
+
+.segment-one ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-one ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+
+.segment-one ul li a {
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.footer-bottom-text {
+    text-align: center;
+    background: #000;
+    line-height: 75px;
+    color: white;
 }

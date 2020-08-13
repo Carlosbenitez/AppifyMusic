@@ -32,14 +32,13 @@
                 <div class="md-form mt-0">
                     <input class="form-control" type="text" placeholder="Song, album, artist..." aria-label="Search" id="user-input">
                 </div>
-                <button type="submit" class="btn btn-light" id="search-btn" onclick="window.location.href='search.html';">Search</button>
+                <button type="submit" class="btn btn-light" id="search-btn" onclick="window.location.href='search.html';"><i class = "fas fa-search"></i></button>
                 <a class="nav-item nav-link active" id="profile" href="profile.html">Profile</a>
             </div>
         </div>
         </div>
     </nav>
     <!------Navbar End------>
-
     <div class="hero">
         <div class="form-box">
             <div class="button-box">
@@ -48,20 +47,36 @@
             <button id="registerbtn" type="button" class="toggle-btn" onclick="register()">Register</button>
         </div> 
         <form id="login" class="input-group">
-            <input type="text" class="input-field" placeholder="User Id" required>
-            <input type="text" class="input-field" placeholder="Enter Password" required>
-            <input type="checkbox" class="check-box"><span>Remeber Password</span>
-            <button type="submit" class="submit-btn">Login</button>
+            <input type="text" class="input-field" placeholder="User Id" required id="user-id">
+            <input type="text" class="input-field" placeholder="Enter Password" required id="user-pass">
+            <button type="submit" class="submit-btn" id="login-btn">Login</button>
         </form>
         <form id="register" class="input-group">
-            <input type="text" class="input-field" placeholder="User Id" required>
-            <input type="email" class="input-field" placeholder="Email Id" required>
-            <input type="text" class="input-field" placeholder="Enter Password" required>
-            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
-            <button type="submit" class="submit-btn">Register</button>
+            <input type="text" class="input-field" placeholder="User Id" required id="userInput-id">
+            <input type="email" class="input-field" placeholder="Email Id" required id="userInput-email">
+            <input type="text" class="input-field" placeholder="Enter Password" required id="userInput-password">
+            <button type="submit" class="submit-btn" id="register-btn">Register</button>
         </form>
+    </div>
+
+    <!--footer-->
+    <div class="sticky-bottom">
+        <footer>
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+                        <h3>Download Itunes to get full Experience!</h3>
+                        <ul>
+                            <li>
+                                <a class= "card-link" href="https://www.apple.com/itunes/?cid=OAS-US-DOMAINS-itunes.com"><i class="fab fa-apple"></i>Itunes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-bottom-text">&copy;Thank You Apple for a sick API</p>
+        </footer>
         </div>
-</div>
 
     <!--Jquery links-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -90,6 +105,9 @@
     
     }
 </script>
+
+    <script src="https://kit.fontawesome.com/8cc12ec6d2.js" crossorigin="anonymous"></script>
+    
     <!--our js-->
     <script src="js/profile.js"></script>
     <script src="js/javascript.js"></script>

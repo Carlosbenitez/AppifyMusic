@@ -54,21 +54,19 @@ $(document).ready(function() {
                 var img = $("<img>").addClass('song-img').attr("src", songImg);
                 songDiv.append(img);
 
-                
-
                 //track name
                 var track = $("<p>").addClass("track-name").text(songName);
                 songDiv.append(track);
 
                 //preview button
-                var previewButton = $('<button class="play-btn"><i class="fas fa-play"></i>');
+                var previewButton = $('<button class="play-btn" target="_blank"><i class="fas fa-play"></i>');
                 previewButton.attr("data-song", songLink);
+
 
                 songDiv.append(previewButton);
 
                 //display all content in here
                 $(".artist-display").prepend(songDiv);
-                
             }
 
         })

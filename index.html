@@ -32,7 +32,7 @@
                 <div class="md-form mt-0">
                     <input class="form-control" type="text" placeholder="Song, album, artist..." aria-label="Search" id="user-input">
                 </div>
-                <button type="submit" class="btn btn-light" id="search-btn" onclick="window.location.href='search.html';">Search</button>
+                <button type="submit" class="btn btn-light" id="search-btn" onclick="window.location.href='search.html';"><i class = "fas fa-search"></i></button>
                 <a class="nav-item nav-link active" id="profile" href="profile.html">Profile</a>
             </div>
         </div>
@@ -40,51 +40,64 @@
     </nav>
     <!------Navbar End------>
     <div class="home-container container-fluid">
+        <!-----TOP TRACKS------>
         <div class="row">
             <div class="col-sm-12 col-lg-12">
                 <div class="content">
-                    <h2 href="" target="_blank" id="top100"> Top Tracks </h2>
+                    <h2 href="" target="_blank" id="top100"> Top Tracks: </h2>
                     <div class="top-tracks">
 
                     </div>
                 </div>
             </div>
         </div>
-
         <br>
-
         <br>
-
-        <div class="row">
-            <div class="col-sm-12 col-lg-4">
+        <!------Weekly Rap------>
+        <!--<div class="row">
+            <div class="col-sm-12 col-lg-12">
                 <div class="content">
-                    <h2 href="" target="_blank" id="rap"> Rap </h2>
+                    <h2 href="" target="_blank" id="rap">Top Artists: </h2>
+                    <div class="top-artists">
+
+                    </div>
                 </div>
             </div>
         </div>
-
         <br>
-
-        <div class="rap-tracks">
-
-        </div>
-
-        <br>
-
-        <div class="row">
+        <br>-->
+        <!--Weekly pop-->
+        <!--<div class="row">
             <div class="col-sm-12 col-lg-4">
                 <div class="content">
-                    <h2 href="" target="_blank" id="country"> Country </h2>
+                    <h2 href="" target="_blank" id="country"> Top Weekly Pop Music: </h2>
+                    <div class="country-tracks">
+
+                    </div>
                 </div>
             </div>
         </div>
-
-        <br>
-
-        <div class="country-tracks">
-
-        </div>
+        <br>-->
     </div>
+
+    <!--footer-->
+    <div class="sticky-bottom">
+        <footer>
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+                        <h3>Download Itunes to get full Experience!</h3>
+                        <ul>
+                          <li>
+                              <a class= "card-link" href="https://www.apple.com/itunes/?cid=OAS-US-DOMAINS-itunes.com"><i class="fab fa-apple"></i>Itunes</a>
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-bottom-text">&copy;Thank You Apple for a sick API</p>
+        </footer>
+      </div>
 
     
 
@@ -101,9 +114,14 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
 
+    <script src="https://js-cdn.music.apple.com/musickit/v1/musickit.js"></script>
+
+    <script src="https://kit.fontawesome.com/8cc12ec6d2.js" crossorigin="anonymous"></script>
+
     <!--our js-->
     <script src="js/index.js"></script>
     <script src="js/javascript.js"></script>
+    <script src="js/profile.js"></script>
 
 </body>
 
