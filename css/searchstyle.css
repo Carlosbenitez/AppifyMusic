@@ -4,7 +4,6 @@
 }
 i {
     z-index: 2 !important;
-
 }
 
 #profile{
@@ -21,7 +20,7 @@ i {
 
 #artist-name{
     text-align: center;
-    color: #007BFF;
+    color: black;
 }
 
 .artist-display {
