@@ -1,4 +1,3 @@
-$(document).ready(function() {
     let button = document.querySelector("#search-btn");
     let userInput = document.querySelector("#user-input");
 
@@ -8,7 +7,7 @@ $(document).ready(function() {
 
         //stores search value in local storage
         localStorage.setItem("search", searchName);
-
+        window.location.href='search.html';
         getDataFromItunes();
     });
 
@@ -26,7 +25,7 @@ $(document).ready(function() {
         }
 
         let queryURL = "https://itunes.apple.com/search?term=" + userInput.value + "&limit=25"
-        
+
         fetch(queryURL)
         .then(data => data.json() )
         .then( json => {
@@ -40,9 +39,9 @@ $(document).ready(function() {
             $("#artist-name").html(singerName);
 
             for(var i = 0; i <= 25; i++) {
-
+            console.log(json.results[i])
                 //gets song name form api
-                var songName = json.results[i].trackCensoredName;
+                var songName =   json.results[i].trackCensoredName || "No Track Found" ;
                 //gets song picture from api
                 var songImg = json.results[i].artworkUrl30;
                 //gets preview audio
@@ -84,10 +83,16 @@ $(document).ready(function() {
     }
 
 
-
-})
-
-
+    $("#user-input").keypress(function(e){
+        if(e.which == 13) {
+            let searchName = userInput.value;
+            console.log(searchName);
+    
+            //stores search value in local storage
+            localStorage.setItem("search", searchName);
+            window.location.href='search.html';
+        }
+    });
 
 
 
