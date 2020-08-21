@@ -19,7 +19,9 @@ $(document).ready(function () {
         for (var i = 0; i < 15; i++) {  
 
             let ituneUrl = "https://itunes.apple.com/search?term=" + songNames[i] + "&limit=1";
-            fetch(ituneUrl)
+            fetch(ituneUrl, {
+                mode: 'no-cors'
+            })
             .then(data => data.json())
             .then(json2 => {
 
