@@ -29,7 +29,7 @@ $("#login-btn").on('click', function() {
     let userPassword = $(this).siblings("#user-pass").val();
 
     
-   profileCheck(userLogin, userPassword);
+    profileCheck(userLogin, userPassword);
 
 });
 
@@ -54,8 +54,6 @@ function profileCheck(user, pass) {
             $("#profile").text(localStorage.getItem("username"));
         }
 }
-
-
 
 
 
